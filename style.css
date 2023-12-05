@@ -1,0 +1,116 @@
+:root {
+  box-sizing: border-box;
+}
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+body {
+  margin-block: 0;
+  margin-inline: auto;
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  background: #ededed;
+  font-family: "Work Sans", Arial, Helvetica, sans-serif;
+}
+
+.popup-card {
+  max-width: 451px;
+  border-radius: 10px;
+  background: #fff;
+}
+.header-container {
+  position: relative;
+}
+.header-container img {
+  width: 100%;
+  display: block;
+  background: rgb(35, 85, 242);
+  border-radius: 10px 10px 0 0;
+}
+.card__body {
+  padding: 0 1rem 1rem;
+}
+.card__header {
+  text-align: center;
+  color: #fff;
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.note {
+  margin: 1.5rem 0;
+  text-align: center;
+  color: rgb(110, 110, 110);
+}
+.newsletter {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+.newsletter input {
+  padding: 1rem 1.5rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  flex: 1 1 150px;
+  background-color: rgb(245, 247, 250);
+}
+.newsletter input:focus {
+  outline: 1.5px solid #777;
+}
+.newsletter input::placeholder {
+  color: rgb(183, 187, 201);
+  font-weight: 500;
+  font-size: 0.9rem;
+  font-family: "work sans", Arial, Helvetica, sans-serif;
+}
+.btn {
+  padding: 1rem 1.5rem;
+  background-color: rgb(35, 85, 242);
+  color: #fff;
+  font-weight: 500;
+  font-size: 0.9rem;
+  border-radius: 8px;
+  border: 0;
+  font-family: "work sans", Arial, Helvetica, sans-serif;
+}
+.btn:focus {
+  outline: 1.5px solid #777;
+}
+.newsletter-note {
+  margin: 0.5rem 0 2rem;
+  color: rgb(189, 189, 189);
+}
+.mdc {
+  display: flex;
+  justify-content: center;
+}
+.fmedia {
+  display: flex;
+  gap: 0.8rem;
+}
+.name {
+  font-weight: 700;
+  margin: 0;
+  font-size: 0.9rem;
+}
+.job {
+  color: rgb(133, 129, 129);
+  margin: 0.2rem 0;
+  font-size: 0.9rem;
+}
+.feedback {
+  text-align: center;
+  color: rgb(110, 110, 110);
+}
+@media (min-width: 800px) {
+  body {
+    background: url(Background.png);
+  }
+}
